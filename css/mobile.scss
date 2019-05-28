@@ -1,0 +1,20 @@
+//media queries
+@media screen and (max-width: 500px) {
+    .hero-text {
+        margin-top: 150px;
+    }
+    .btn-container {
+        display: grid;
+
+        #dash {
+            visibility: hidden;
+        }
+    }
+   
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {}
+
+@media screen and (min-width: 1171px) {}

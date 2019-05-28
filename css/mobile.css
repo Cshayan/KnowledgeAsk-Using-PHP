@@ -1,0 +1,13 @@
+@media screen and (max-width: 500px) {
+  .hero-text {
+    margin-top: 150px;
+  }
+  .btn-container {
+    display: -ms-grid;
+    display: grid;
+  }
+  .btn-container #dash {
+    visibility: hidden;
+  }
+}
+/*# sourceMappingURL=mobile.css.map */

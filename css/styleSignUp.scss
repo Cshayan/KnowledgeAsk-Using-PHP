@@ -1,0 +1,264 @@
+.container-fluid {
+    .card {
+
+        width: 80%;
+
+        .card-body {
+            background: #333;
+
+            .desc {
+                color: #ffffff;
+            }
+
+            a {
+                text-decoration: none;
+            }
+        }
+
+    }
+}
+
+//for navbar
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+$home-image: url(../images/question-mark.jpg);
+$primary-color: #fff;
+$secondary-color: #eece1a;
+$background-opacity: 0.1;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    padding: 12px;
+    background: linear-gradient(rgba($primary-color, $background-opacity),
+            rgba($primary-color, $background-opacity)),
+        $home-image;
+}
+
+.nav-item {
+    .nav-link {
+
+        font-weight: bold;
+        font-size: 14px;
+
+        &:hover {
+            border-bottom: 2px solid yellow;
+        }
+    }
+}
+
+.dropdown-menu {
+    background: #576574;
+    color: #ffffff;
+}
+
+.dropdown-item {
+    color: #ffffff;
+
+    &:hover {
+        border-bottom: 2px solid yellow;
+    }
+}
+
+#ask {
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+    color: yellow;
+}
+
+#know {
+    font-family: 'Pacifico', cursive;
+}
+
+body {
+    background-image: url("../images/question-mark.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+
+    background: linear-gradient(rgba($primary-color, $background-opacity),
+            rgba($primary-color, $background-opacity)),
+        $home-image;
+}
+
+
+//for the signup form
+body {
+    .parentForm {
+        height: 100%;
+        width: 100%;
+    }
+
+    .childForm {
+        margin: auto;
+        width: 70%;
+        top: 50%;
+        left: 50%;
+        width: 90%;
+        // transform: translateY(35%);
+    }
+
+    .form-container {
+        background: #333;
+        padding: 40px 30px 15px 30px;
+        border-radius: 20px 20px 20px 20px;
+        height: 32vh;
+    }
+
+    .form-group {
+        position: relative;
+    }
+
+    label {
+        position: absolute;
+        top: 8px;
+        left: 0;
+        color: #c5c5c5;
+        font-size: 12px;
+        pointer-events: none;
+        outline: none;
+        transition: 0.5s;
+    }
+
+    input:focus~label {
+        top: -20px;
+        left: 0;
+        font-size: 14px;
+        color: #f1c40f;
+        // background: #333;
+        font-weight: bold;
+    }
+
+    input:focus {
+        background-color: yellow;
+    }
+
+    input:valid~label {
+        position: absolute;
+        top: -20px;
+        left: 0;
+        font-size: 14px;
+        color: #f1c40f;
+        // background: #333;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    [type="password"] {
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid #c5c5c5;
+        border-radius: 0 0 0 0;
+        color: #fff;
+        outline: none;
+    }
+
+    .form-control-no-border:focus {
+        border-color: #f1c40f;
+        outline: 0;
+        background-color: #333;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        color: #ffffff;
+    }
+
+    .btn {
+        outline: none;
+
+        &:hover {
+            border-radius: 50px;
+        }
+    }
+
+    .card-footer {
+        text-align: center;
+    }
+
+}
+
+.card-header {
+    background: #57606f;
+    text-align: center;
+
+    .desc {
+        color: #ffffff;
+    }
+}
+
+.card-footer {
+    background: #57606f;
+    color: #ffffff;
+
+    a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+}
+
+#ask {
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+    color: yellow;
+}
+
+#know {
+    font-family: 'Pacifico', cursive;
+    color: #ffffff;
+}
+
+.container-fluid {
+    .row {
+        .error {
+            background: #ffffff;
+            border-left: 2px solid #eb4d4b;
+            color: #333;
+            padding: 5px 10px 5px 10px;
+        }
+        .errorColor{
+            color: #eb4d4b;
+            font-weight: bold;
+        }
+
+    }
+}
+
+.err-container{
+    text-align: center;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 500px) {
+    .container-fluid {
+        .card {
+            width: 100%;
+        }
+    }
+
+    .container-fluid {
+        .row {
+            #card-desc {
+                visibility: hidden;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1171px) {
+    .container-fluid {
+        .row {
+
+            #card-desc {
+                margin-top: 200px;
+            }
+        }
+    }
+    .err-container{
+        visibility: hidden;
+    }
+
+}

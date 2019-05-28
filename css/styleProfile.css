@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#ask {
+  font-size: 30px;
+  font-family: 'Pacifico', cursive;
+  color: yellow;
+}
+
+#know {
+  font-family: 'Pacifico', cursive;
+}
+/*# sourceMappingURL=styleProfile.css.map */

@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
+.container-fluid .card {
+  width: 80%;
+}
+
+.container-fluid .card .card-body {
+  background: #333;
+}
+
+.container-fluid .card .card-body .desc {
+  color: #ffffff;
+}
+
+.container-fluid .card .card-body a {
+  text-decoration: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  padding: 12px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url(../images/question-mark.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../images/question-mark.jpg);
+}
+
+.nav-item .nav-link {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.nav-item .nav-link:hover {
+  border-bottom: 2px solid yellow;
+}
+
+.dropdown-menu {
+  background: #576574;
+  color: #ffffff;
+}
+
+.dropdown-item {
+  color: #ffffff;
+}
+
+.dropdown-item:hover {
+  border-bottom: 2px solid yellow;
+}
+
+#ask {
+  font-size: 30px;
+  font-family: 'Pacifico', cursive;
+  color: yellow;
+}
+
+#know {
+  font-family: 'Pacifico', cursive;
+}
+
+body {
+  background-image: url("../images/question-mark.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url(../images/question-mark.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../images/question-mark.jpg);
+}
+
+body .parentForm {
+  height: 100%;
+  width: 100%;
+}
+
+body .childForm {
+  margin: auto;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+}
+
+body .form-container {
+  background: #333;
+  padding: 40px 30px 15px 30px;
+  border-radius: 20px 20px 20px 20px;
+  height: 32vh;
+}
+
+body .form-group {
+  position: relative;
+}
+
+body label {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  color: #c5c5c5;
+  font-size: 12px;
+  pointer-events: none;
+  outline: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body input:focus ~ label {
+  top: -20px;
+  left: 0;
+  font-size: 14px;
+  color: #f1c40f;
+  font-weight: bold;
+}
+
+body input:focus {
+  background-color: yellow;
+}
+
+body input:valid ~ label {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  font-size: 14px;
+  color: #f1c40f;
+  font-weight: bold;
+}
+
+body input[type="text"],
+body [type="password"] {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #c5c5c5;
+  border-radius: 0 0 0 0;
+  color: #fff;
+  outline: none;
+}
+
+body .form-control-no-border:focus {
+  border-color: #f1c40f;
+  outline: 0;
+  background-color: #333;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #ffffff;
+}
+
+body .btn {
+  outline: none;
+}
+
+body .btn:hover {
+  border-radius: 50px;
+}
+
+body .card-footer {
+  text-align: center;
+}
+
+.card-header {
+  background: #57606f;
+  text-align: center;
+}
+
+.card-header .desc {
+  color: #ffffff;
+}
+
+.card-footer {
+  background: #57606f;
+  color: #ffffff;
+}
+
+.card-footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#ask {
+  font-size: 30px;
+  font-family: 'Pacifico', cursive;
+  color: yellow;
+}
+
+#know {
+  font-family: 'Pacifico', cursive;
+  color: #ffffff;
+}
+
+.container-fluid .row .error {
+  background: #ffffff;
+  border-left: 2px solid #eb4d4b;
+  color: #333;
+  padding: 5px 10px 5px 10px;
+}
+
+.container-fluid .row .errorColor {
+  color: #eb4d4b;
+  font-weight: bold;
+}
+
+.err-container {
+  text-align: center;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 500px) {
+  .container-fluid .card {
+    width: 100%;
+  }
+  .container-fluid .row #card-desc {
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 1171px) {
+  .container-fluid .row #card-desc {
+    margin-top: 200px;
+  }
+  .err-container {
+    visibility: hidden;
+  }
+}
+/*# sourceMappingURL=styleSignUp.css.map */
